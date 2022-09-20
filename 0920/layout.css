@@ -1,1 +1,12 @@
-
+.frame{
+    display:flex;
+}
+.left
+    background-color: red;
+    flex:none;
+    width:50%
+}
+.right{
+    background-color: blue;
+    flex:none;
+    width:50%
