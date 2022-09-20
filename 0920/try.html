@@ -5,45 +5,83 @@
         <meta name=”viewport” content=”width=device-width, initial-scale=1,        maximum-scale=1” />
         <title>我的自我介紹</title>
         <style type=”text/css”>
-        .head{
-               background-color:#003344;color:white;font-weight:bold;font-size:30px;
-               text-align:center;padding:10px;
-         }
-        .content{
-               width:1000px;margin-left:auto;margin-right:auto;
-         }
-        .box{
-               width:280px;padding:10px;margin:10px;background-color:white;
-               display:inline-block;vertical-align:top;
-               text-align:center;height:150px;line-height:30px
-               }
-        .title{font-weight:bold}
-        @media screen and (max-width:600px) {
-                  .content{width:100%;text-align:center;}
+        a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #E83015;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header h1 {
+  line-height: 60px;
+  margin: 0 15px;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu li {
+  position: relative;
+  transition: .5s;
+}
+
+.main-menu li a {
+  padding: 0 15px;
+  line-height: 60px;
+}
+
+.main-menu li::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background-color: #fff;
+  transition: .5s;
+}
+
+.main-menu li:hover {
+  background-color: #b02914;
+}
+
+.main-menu li:hover::after {
+  left: 0;
+  right: 0;
+}
         </style>
+        
+       
 </head>
-<body style =”margin:0px;background-color:#eeeeee;”>
-        <div class=”head”>我的自我介紹</div>
-        <div class=”content”>
-              <div class=”box”>
-                       <div class=”title”>我的基本資料</div>
-                          <div>你今天好嗎</div>
-                          <div>很好阿</div>
-                          <div>還不錯</div>
+
+  <header class="main-header">
+        <div class="container">
+        <h1><a href="#">Zombie@Dump</a></h1>
+        <nav>
+        <ul class="main-menu">
+                <li><a href="https://ashhhleee.github.io/WeHelp-Bootcamp/week-1/rwd-hw.html">關於我們</a></li>
+                <li><a href="https://ashhhleee.github.io/WeHelp-Bootcamp/week-1/rwd-hw.html">作品們</a></li>
+                <li><a href="https://ashhhleee.github.io/WeHelp-Bootcamp/week-1/rwd-hw.html">聯絡我們</a></li>
+        </ul>
+        </nav>
         </div>
-        <div class=”box”>
-               <div class=”title”>我的個人興趣</div>
-                          <div>唱歌</div>
-                          <div>跳舞</div>
-                          <div>打東東</div>
-        </div>
-        <div class=”box”>
-               <div class=”title”>歡迎與我聯絡</div>
-                          <div>0978616102</div>
-                          <div>ashley19961102@gmail.com</div>
-                          <div>hi_ashleeey</div>
-        </div>
-     </div>
+  </header>
+        
+</header>
+
+<body>
 </body>
 </html>
 
